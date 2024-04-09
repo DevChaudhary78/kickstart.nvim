@@ -424,6 +424,7 @@ require('lazy').setup({
       { 'folke/neodev.nvim', opts = {} },
     },
     config = function()
+      vim.keymap.set('n', '<leader>cm', '<Cmd>Mason<Cr>', { noremap = true, silent = true })
       -- Brief aside: **What is LSP?**
       --
       -- LSP is an initialism you've probably heard, but might not understand what it is.
